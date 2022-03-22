@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=EmuDeck SD Card
+Name=EmuDeck SD Card v0.4
 Exec=curl https://azesp.flyingpigs.es/install.sh | bash -s -- SD
 Icon=steamdeck-gaming-return
 Terminal=true
