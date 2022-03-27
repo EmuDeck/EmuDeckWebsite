@@ -2115,11 +2115,9 @@
           }
 
           @media screen and (max-width: 767px) {
-          #modal .section{
-            padding: 20px;
-          }
-
-
+            #modal .section{
+              padding: 20px;
+            }
           }
 
 
@@ -2194,8 +2192,18 @@
           }
           .header-links{
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-around;
             align-items:center;
+          }
+          @media screen and (max-width: 767px) {
+            .header-links{
+              margin-top: 10px;
+              display: block;
+            }
+            .header-links a{
+              margin: 0;
+              margin-right: 10px;
+            }
           }
     </style>
   </head>
@@ -2205,10 +2213,12 @@
         <div class="col_3"><h3 class="gradient-text">EmuDeck</h3></div>
         <div class="col_9 header-links">
           <a class="gradient-text" href="#how_to_install">Installation Guide</a>
-          | <a class="gradient-text" href="#download">Download</a> |
-          <a class="gradient-text" href="#steam_input">Steam Input</a>|
-          <a class="gradient-text" href="#steam_input">Cemu Special Config</a>
-          |
+          <a class="gradient-text" href="#download">Download</a>
+          <a class="gradient-text" href="#steam_input">Steam Input</a>
+          <a class="gradient-text" href="#cemu_special_conf"
+            >Cemu Special Config</a
+          >
+          <a class="gradient-text" target="_blank" href="#faqs">FAQ</a>
           <a class="gradient-text" target="_blank" href="cookies.html"
             >Cokie Policy</a
           >
