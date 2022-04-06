@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=EmuDeck Internal v0.4
+Name=EmuDeck v0.12
 Exec=curl https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash -s -- INTERNAL
 Icon=steamdeck-gaming-return
 Terminal=true
