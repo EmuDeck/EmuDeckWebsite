@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=EmuDeck v0.12
-Exec=curl https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash -s -- INTERNAL
+Name=EmuDeck BETA
+Exec=curl https://raw.githubusercontent.com/dragoonDorise/EmuDeck/beta/install.sh | bash -s -- BETA
 Icon=steamdeck-gaming-return
 Terminal=true
 Type=Application
