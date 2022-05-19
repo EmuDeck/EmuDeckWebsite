@@ -2435,6 +2435,7 @@
           <h3 class="h-sep">Do you want to support my work?</h3>
           <p>
             <a
+              id="patreon_link"
               target="_blank"
               href="https://www.patreon.com/bePatron?u=29065992"
               class="patreon_btn"
@@ -2568,5 +2569,29 @@
         </div>
       </div>
     </section>
+    <script>
+      document.getElementById("download_link").addEventListener("click", function () {
+        dataLayer.push({'download_deck': true});
+      });
+      document.getElementById("reddit_link").addEventListener("click", function () {
+        dataLayer.push({'reddit_link': true});
+      });     
+      document.getElementById("discord_link").addEventListener("click", function () {
+        dataLayer.push({'discord_link': true});
+      });
+      document.getElementById("twitter_link").addEventListener("click", function () {
+        dataLayer.push({'twitter_link': true});
+      }); 
+      document.getElementById("instagram_link").addEventListener("click", function () {
+        dataLayer.push({'instagram_link': true});
+      });
+      document.getElementById("faqs_link").addEventListener("click", function () {
+        dataLayer.push({'faqs_link': true});
+      });
+      document.getElementById("patreon_link").addEventListener("click", function () {
+        dataLayer.push({'patreon_link': true});
+      });
+      
+    </script>
   </body>
 </html>
