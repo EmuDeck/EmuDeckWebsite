@@ -2216,6 +2216,9 @@
             vertical-align: middle;
             fill: rgb(255, 53, 65);
           }
+          #faqs li{
+            margin-bottom: 10px;
+          }
     </style>
   </head>
   <body>
@@ -2498,11 +2501,15 @@
         <div class="col_8">
           <ul>
             <li>
-              <strong>Q: Do I need to install any emulators? </strong>
+              <strong>Q: Is EmuDeck safe to install? </strong>
               <br />
-              A: No, everything is installed automatically!
+              A: Of course, truth is, EmuDeck doesn't even get installed on your system. EmuDeck just installs your Emulators automatically from the same sources you'll use if done manually, the Discover App on your Steam Deck. We configure those Emulators so you don't have to and create the rom systems for you along some other stuff just to make your life easier. If an Emulator is not on the Discover app we will use the official GitHub source.
             </li>
-
+            <li>
+              <strong>Q: Do I need sudo / root access? </strong>
+              <br />
+              A: No. EmuDeck does an expert mode that allows you to install PowerTools, a utility that can overclock your SteamDeck so some systems runs better, and that tools needs you to set a password to your Steam Deck but that's <strong>completely optional</strong>.
+            </li>
             <li>
               <strong
                 >Q: Do you use RetroArch from the Discover store or from Steam?
@@ -2538,13 +2545,12 @@
             <li>
               <strong>Q: When I open a Wii U game nothing happens</strong>
               <br />
-              A: Make sure to follow the Cemu Special Config section
+              A: If you are an old EmuDeck user you might have set Proton Compatibility Mode for your games back in the day, this is no longer necessary so just disable Proton Compatibility Mode and play Wii U games just like any other systems
             </li>
             <li>
               <strong>Q: Yuzu won't exit using the Steam UI</strong>
               <br />
-              A: Sometimes Yuzu takes some seconds to exit, just wait. In a next
-              update you'll be able to exit using the R5 button
+              A: Sometimes Yuzu takes some seconds to exit, just wait.
             </li>
             <li>
               <strong>Q: How can I get new updates?</strong>
@@ -2553,7 +2559,9 @@
               <a target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a
               >, We'll notify you there when a new update is live. You'll just
               need to launch EmuDeck App from your desktop for everything to get
-              updated.
+              updated. You can also follow us on <a id="twitter_link_faq" target="_blank" href="https://twitter.com/emudeck">Twitter</a>
+             or
+              <a id="instagram_link_faq" target="_blank" href="https://www.instagram.com/emudeck_official/">Instagram</a>
             </li>
             <li>
               <strong
@@ -2591,6 +2599,13 @@
       document.getElementById("patreon_link").addEventListener("click", function () {
         dataLayer.push({'patreon_link': true});
       });
+      
+      document.getElementById("twitter_link_faq").addEventListener("click", function () {
+        dataLayer.push({'twitter_link': true});
+      }); 
+      document.getElementById("instagram_link_faq").addEventListener("click", function () {
+        dataLayer.push({'instagram_link': true});
+      });      
       
     </script>
   </body>
