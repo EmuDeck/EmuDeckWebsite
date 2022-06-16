@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=EmuDeck SD Card v0.4
+Name=Install EmuDeck
 Exec=curl https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash -s -- SD
 Icon=steamdeck-gaming-return
 Terminal=true
