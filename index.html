@@ -2587,6 +2587,18 @@
               A: We support HoloISO devices and we plan on support the next
               Anbernic Win600
             </li>
+            <li>
+              <strong>Q: What about Windows or Android? </strong>
+              <br />
+              A: We ar beta testing the Windows Edition right now, Android will
+              come later, but as of now you can test our baby brother
+              <a
+                id="pegasus_link_faqs"
+                href="https://www.pegasus-installer.com"
+                target="_blank"
+                >Pegasus Installer</a
+              >, it's similar to EmuDeck but for Android Handhelds
+            </li>
 
             <li>
               <strong
@@ -2717,6 +2729,11 @@
         });
       document
         .getElementById("pegasus_link")
+        .addEventListener("click", function () {
+          dataLayer.push({ pegasus_link: true });
+        });
+      document
+        .getElementById("pegasus_link_faqs")
         .addEventListener("click", function () {
           dataLayer.push({ pegasus_link: true });
         });
