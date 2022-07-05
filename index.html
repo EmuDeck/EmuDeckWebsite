@@ -2078,12 +2078,21 @@
             margin-bottom: 0px;
           }
           .header {
-            background: #fff;
+            background: #000;
             padding: 20px;
             position: sticky;
             z-index: 9;
             top: 0;
             display: inline-block;
+          }
+
+          .header a{
+            color:#fff;
+            transition:.5s;
+          }
+
+          .header a:hover{
+            animation: background-text 15s infinite;
           }
 
           .header h2,
@@ -2230,15 +2239,15 @@
   <body>
     <header class="header">
       <div class="content gridrow">
-        <div class="col_3"><h3 class="gradient-text">EmuDeck</h3></div>
+        <div class="col_3">
+          <img src="img/logo.png" alt="EmuDeck" width="140" />
+        </div>
         <div class="col_9 header-links">
-          <a class="gradient-text" href="#how_to_install">Installation Guide</a>
-          <a class="gradient-text" href="#download">Download</a>
-          <a class="gradient-text" href="#steam_input">Steam Input</a>
-          <a class="gradient-text" target="_blank" href="#faqs">FAQ</a>
-          <a class="gradient-text" target="_blank" href="cookies.html"
-            >Cookie Policy</a
-          >
+          <a href="#how_to_install">Installation Guide</a>
+          <a href="#download">Download</a>
+          <a href="#steam_input">Steam Input</a>
+          <a target="_blank" href="#faqs">FAQ</a>
+          <a target="_blank" href="cookies.html">Cookie Policy</a>
         </div>
       </div>
     </header>
