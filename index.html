@@ -2350,7 +2350,15 @@
               We will support all future SteamOS Devices like the Anbernic
               Win600. If you use another PC Handheld with HoloISO we have you
               covered! And we are working on both Windows and Android port is in
-              the future too.
+              the future too. In the meantime if you have an Android Handlheld
+              like the Anbernic RG552 or the AYN Odin you can try our Pegasus
+              Installer, EmuDeck's little brother
+              <a
+                id="pegasus_link"
+                href="https://www.pegasus-installer.com"
+                target="_blank"
+                >here</a
+              >
             </p>
           </div>
           <div class="col_6">
@@ -2691,6 +2699,7 @@
         .addEventListener("click", function () {
           dataLayer.push({ faqs_link: true });
         });
+
       document
         .getElementById("patreon_link")
         .addEventListener("click", function () {
@@ -2705,6 +2714,11 @@
         .getElementById("instagram_link_faq")
         .addEventListener("click", function () {
           dataLayer.push({ instagram_link: true });
+        });
+      document
+        .getElementById("pegasus_link")
+        .addEventListener("click", function () {
+          dataLayer.push({ pegasus_link: true });
         });
     </script>
   </body>
