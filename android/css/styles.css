@@ -110,7 +110,7 @@ p.lead {
 .h1 span,
 .h2 span,
 .h3 span {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .h1 sup {
@@ -119,7 +119,7 @@ p.lead {
 }
 
 .h2 {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 250%;
 }
 
@@ -212,13 +212,13 @@ img.screenshot {
 }
 .link {
   color: #e9e8e8;
-  font-weight: bold;
+  font-weight: 900;
   transition: 0.5s;
   text-decoration: none;
 }
 .link:hover {
   color: #fb323b;
-  font-weight: bold;
+  font-weight: 900;
   transition: 0.5s;
 }
 
