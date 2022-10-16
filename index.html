@@ -1,17 +1,8 @@
 <html>
   <head>
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="ddfc8a52-5576-45b1-8596-d1b37e9eb4d9"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ddfc8a52-5576-45b1-8596-d1b37e9eb4d9" data-blockingmode="no" type="text/javascript"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-0W02EF26KV"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W02EF26KV"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -25,22 +16,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>EmuDeck - Emulators on Steam Deck and SteamOS</title>
-    <meta
-      name="description"
-      content="Configure your SteamOS and Steam Deck Emulators"
-    />
+    <meta name="description" content="Configure your SteamOS and Steam Deck Emulators" />
     <meta name="author" content="dragoonDorise" />
 
-    <meta
-      property="og:title"
-      content="Configure your SteamOS and Steam Deck Emulators"
-    />
+    <meta property="og:title" content="Configure your SteamOS and Steam Deck Emulators" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.emudeck.com" />
-    <meta
-      property="og:description"
-      content="Configure your Steam Deck Emulators"
-    />
+    <meta property="og:description" content="Configure your Steam Deck Emulators" />
     <meta property="og:image" content="img/hero.png" />
 
     <link rel="icon" href="img/favicon-32x32.png" />
@@ -180,8 +162,7 @@
       button,
       input,
       textarea {
-        font-family: "Motiva Sans", Sans-serif, -apple-system, system,
-          sans-serif;
+        font-family: "Motiva Sans", Sans-serif, -apple-system, system, sans-serif;
       }
       #content,
       body {
@@ -1940,8 +1921,11 @@
       }
       .header-links {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
+      }
+      .header-links a {
+        margin-right: 20px;
       }
       @media screen and (max-width: 767px) {
         .header-links {
@@ -1997,6 +1981,26 @@
       footer p:last-child {
         margin-bottom: 0;
       }
+      .faqs li {
+        margin-bottom: 0px;
+      }
+      .faqs li strong {
+        display: inline-block;
+        margin-top: 18px;
+      }
+      .imagecontainer {
+        position: relative;
+      }
+      .imagecontainer .video {
+        background: #000;
+        position: absolute;
+        width: 42%;
+        bottom: 22%;
+        outline: 0.5rem solid #000;
+      }
+      .imagecontainer .video .iframe-container {
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
@@ -2008,7 +2012,6 @@
         <div class="col_9 header-links">
           <a href="#how_to_install">Installation Guide</a>
           <a href="#download">Download</a>
-          <a href="#steam_input">Steam Input</a>
           <a target="_blank" href="#faqs">FAQ</a>
           <a target="_blank" href="cookies.html">Cookie Policy</a>
         </div>
@@ -2016,55 +2019,66 @@
     </header>
     <section class="section inverted gradient">
       <div class="content gridrow">
-        <div class="col_5">
-          <h2>Play all of your retro games</h2>
-          <p class="large">
-            We take care of everything. RetroArch configuration, bezels, gamepad
-            configuration for GameCube, Wii, and more.
-          </p>
-        </div>
-        <div class="col_7 imagecontainer">
-          <img src="img/hero.png" />
+        <div class="col_12 center">
+          <h2>Play all of your retro games on the go</h2>
+          <p class="large">We take care of everything. Emulator installation & configuration, bezels, hotkeys, performance fixes and more.</p>
         </div>
       </div>
-      <div class="content gridrow">
-        <div class="col_4">
-          <div class="head">
-            <h3>RetroArch</h3>
+      <div class="content gridrow middle">
+        <div class="col_12">
+          <div class="imagecontainer">
+            <div class="video">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/PbSe8Ian8mE?autoplay=1&playlist=PbSe8Ian8mE&loop=1&controls=0&mute=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <img src="img/hero.png" />
           </div>
-          <ul>
-            <li><b>1:1 aspect ratio:</b> for handhelds and MAME systems</li><br>
-            <li><b>4:3 and 8:7 aspect ratios:</b> for NES and SNES</li><br>
-            <li><b>LCD3 shader:</b> for all handhelds and MAME</li><br>
-            <li><b>Additional features:</b> auto-save and auto-load state, game bezels for 4:3 systems, the ability to hide RetroArch notifications, and more</li>
-          </ul>
         </div>
-        <div class="col_4">
-          <div class="head">
-            <h3>Hotkeys</h3>
+      </div>
+    </section>
+    <section class="section">
+      <div class="content">
+        <div class="gridrow">
+          <div class="col_6">
+            <img src="img/emulators.jpg" />
           </div>
-          <ul>
-            <li><b>Retroarch menu:</b> L3 + R3</li><br>
-            <li><b>Quit Retroarch:</b> Select + Start (x2)</li><br>
-            <li><b>Pause game:</b> Select + A</li><br>
-            <li><b>Fast-forward:</b> Select + R2</li><br>
-			<li><b>Save:</b> Select + R1</li><br>
-            <li><b>Load save state:</b> Select + L1</li>
-          </ul>
+          <div class="col_6">
+            <h2>All your favourite systems</h2>
+            <p class="large">Atari, Genesis/Mega Drive , Sega CD, Sega 32X, PC Engine, NES, Super Nntendo , MAME, FinalBurn Neo, Master System, Game Boy, Neo Geo Pocket, Game Gear, Nintendo DS, Nintendo 3DS, Sony PSP, Dreamcast, Playstation, Nintendo 64, Wii, GameCube, Wii U, Switch, etc.</p>
+          </div>
         </div>
-        <div class="col_4">
-          <div class="head">
-            <h3>Systems</h3>
+      </div>
+    </section>
+    <section class="section inverted" id="steam_input">
+      <div class="content">
+        <div class="gridrow">
+          <div class="col_6">
+            <h2>Standard Hotkeys</h2>
+            <p class="large">We follow the AmberElec convention so you can jump right in and know how to save games. And in some emulators we unleash all the Steam Deck's extra controls using custom Steam Input Profiles.</p>
+            <ul>
+              <li><strong>Quit Game:</strong> SELECT + START</li>
+              <li><strong>Fast Forward:</strong> SELECT + R2</li>
+              <li><strong>Quick Save:</strong> SELECT + R1</li>
+              <li><strong>Load Quick Save:</strong> SELECT + L1</li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <b>2D Gaming:</b> Genesis/Mega Drive (widescreen support), Sega CD, Sega 32X, PC Engine, NES, SNES (widescreen support), MAME, FinalBurn Neo, Master System, etc.
-            </li><br>
-			<li>
-              <b>Handheld Gaming:</b> Game Boy, Neo Geo Pocket, Game Gear, NDS, 3DS (Steam input support for Citra), PSP, etc.
-            </li><br>
-            <li><b>3D Gaming:</b> Dreamcast, Playstation, Nintendo 64, Wii, GameCube, Wii U (Steam input support for CEMU), Switch, etc.
-          </ul>
+          <div class="col_6">
+            <img src="img/template.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="emu_station">
+      <div class="content">
+        <div class="gridrow">
+          <div class="col_6">
+            <img src="img/wizard.png" />
+          </div>
+          <div class="col_6">
+            <h2>Easy to install but flexible</h2>
+            <p class="large">Our graphical wizard will install everything you need in just a couple of clicks or if you are familiar with emulation you can also customize your installation, choose shaders, aspect ratios, themes, etc. You just need to provide your games and system bios.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -2073,12 +2087,7 @@
         <div class="gridrow">
           <div class="col_6">
             <h2>Beautifully detailed</h2>
-            <p class="large">
-              All your games presented with their box arts as if they were a
-              regular Steam Game, all thanks to the power of Steam Rom Manager.
-              Don't worry, we download and preconfigure Steam Rom Manager for
-              you so it's all done in just one click.
-            </p>
+            <p class="large">Your games will be displayed with box art alongside the rest of your Steam library, thanks to a powerful tool called Steam ROM Manager. We will download and configure Steam ROM Manager for you, so everything is done with just a single click.</p>
           </div>
           <div class="col_6">
             <img src="img/ss1.png" />
@@ -2086,20 +2095,15 @@
         </div>
       </div>
     </section>
-    <section class="section inverted" id="emu_station">
+    <section class="section" id="emu_station">
       <div class="content">
         <div class="gridrow">
           <div class="col_6">
-            <img src="img/esde.png" />
+            <img src="img/ESDE.jpg" />
           </div>
           <div class="col_6">
             <h2>EmulationStation Desktop Edition</h2>
-            <p class="large">
-              Do you like to keep your roms separated from your Steam Library?
-              We got you covered! Just install EmuDeck and we will also install
-              it and all our custom configuration will carry over to
-              EmulationStation DE. No need to configure path roms or anything.
-            </p>
+            <p class="large">Do you prefer to keep your ROMs separated from your Steam library? We've got you covered! Installing EmuDeck will also carry over our configurations into EmulationStation Desktop Edition, greatly simplifying the setup process.</p>
           </div>
         </div>
       </div>
@@ -2109,19 +2113,7 @@
         <div class="gridrow">
           <div class="col_6">
             <h2>SteamOS, Windows and Android</h2>
-            <p class="large">
-              We plan to support all SteamOS Devices like the Anbernic Win600, and if you already use another PC Handheld with
-              HoloISO we have you covered! We are also working on both Windows
-              and an Android port is in the future too. In the meantime if you
-              have an Android Handheld like the Anbernic RG552 or the AYN Odin
-              you can try our EmuDeck for Android Beta
-              <a
-                id="pegasus_link"
-                href="/android"
-                target="_blank"
-                >here</a
-              >
-            </p>
+            <p class="large">We plan to support all SteamOS Devices like the Anbernic Win600, and if you already use another PC Handheld with HoloISO we have you covered! We are also working on a Windows and an Android port is in the future too.</p>
           </div>
           <div class="col_6">
             <img src="img/win600.jpg" />
@@ -2131,64 +2123,25 @@
     </section>
     <section class="section" id="how_to_install">
       <div class="content gridrow">
-        <div class="col_5">
-          <h2>5 Steps guide</h2>
-          <p>
-            Follow these simple guide or the amazing guide done by
-            RetroGameCorps
-          </p>
-          <div class="iframe-container">
-            <iframe
-              src="https://www.youtube.com/embed/ylErPAL2cj0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <p>
-            O ésta otra en 🇪🇸
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=HEa7Ufn-A34&t=5s"
-              >por TuberViejuner</a
-            >
-          </p>
-        </div>
         <div class="col_7">
+          <h2>Install guide</h2>
+          <p>Follow these simple guide or the amazing guide done by RetroGameCorps</p>
+          <div class="iframe-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/ylErPAL2cj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col_5">
           <ol>
-            <li>
-              If you plan to store your roms on a SD card..<strong
-                >Format your SD Card in Steam UI. SD Cards need to be on ext4
-                (or btrfs) to work on EmuDeck</strong
-              >. Then go into Desktop mode by pressing the STEAM button, Power
-              -> Switch to Desktop
-            </li>
-            <li>
-              Download the Installer down below, copy that file to your Deck's
-              Desktop and run it.
-            </li>
-            <li>
-              Now <strong>close Steam</strong> and run Steam Rom Manager when
-              asked by the app.
-            </li>
-            <li>
-              Click on Preview, then Generate App list, wait for all the images
-              to download and then click Save App list. The first time it could
-              take some minutes, check on the Event Log tab to know when the
-              process is finished.
-            </li>
-            <li>
-              Close Steam Rom Manager and the Installer window, click on "Return
-              to game mode" on your desktop and you are good to go!
-            </li>
+            <li>If you plan to store your roms on a SD card... <strong>Format your SD Card in Steam UI. SD Cards need to be on ext4 (or btrfs) to work on EmuDeck</strong>. Then go into Desktop mode by pressing the STEAM button, Power -> Switch to Desktop</li>
+            <li>Download the Installer down below, copy that file to your Deck's Desktop and run it.</li>
+            <li>When The installation finish you'll need to copy yor games and run an app called Steam Rom Manager.</li>
+            <li>Click on Preview, then Generate App list, wait for all the images to download and then click Save App list. The first time it could take some minutes. This will add all your games, emulators an EmulationStatoin DE to your Steam Library.</li>
+            <li>Close Steam Rom Manager, click on "Return to game mode" on your desktop and you are good to go!</li>
           </ol>
           <p>
             <br />
             BONUS: You can use EmuDeck with
-            <strong>EmulationStation</strong> right out of the box, no
-            configuration needed! After you run Steam Rom Manager you will see
-            it on Steam in a new Emulation Collection
+            <strong>EmulationStation DE</strong> right out of the box, no configuration needed! After you run Steam Rom Manager you will see it on Steam in a new Emulation Collection
           </p>
         </div>
       </div>
@@ -2196,98 +2149,44 @@
 
     <section class="section inverted gradient" id="download">
       <div class="content gridrow">
-        <div class="col_6">
-          <h3>Download your installer.</h3>
-          <p>The installer will guide you through the process</p>
+        <div class="col_7">
+          <h2>Download EmuDeck</h2>
+          <p>EmuDeck updates over the internet so you'll need to download this installer <strong>just once.</strong></p>
 
           <p>
             <a href="EmuDeck.desktop" id="download_link"
               ><button>
                 <nobr
                   >Download app
-                  <svg
-                    class="rightarrow"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-                    ></path>
+                  <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
                   </svg>
                 </nobr></button
             ></a>
           </p>
-          <small
-            >EmuDeck updates over the internet, you need to download this
-            installer <strong>just once.</strong> Just keep EmuDeck on your
-            desktop and run it anytime to update your EmuDeck installation</small
-          >
-
+          <small>Remember to copy the installer to your Desktop or it won't work</small>
           <h3 class="h-sep">Need any help or need to contact us?</h3>
           <p>
-            <a
-              id="reddit_link"
-              target="_blank"
-              href="https://www.reddit.com/r/EmuDeck/"
-              >Reddit</a
-            >
+            <a id="reddit_link" target="_blank" href="https://www.reddit.com/r/EmuDeck/">Reddit</a>
             |
-            <a
-              id="github_link"
-              target="_blank"
-              href="https://github.com/dragoonDorise/EmuDeck"
-              >Github</a
-            >
+            <a id="github_link" target="_blank" href="https://github.com/dragoonDorise/EmuDeck">Github</a>
             |
-            <a
-              id="discord_link"
-              target="_blank"
-              href="https://discord.gg/b9F7GpXtFP"
-              >Discord</a
-            >
+            <a id="discord_link" target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a>
             |
-            <a
-              id="twitter_link"
-              target="_blank"
-              href="https://twitter.com/emudeck"
-              >Twitter</a
-            >
-            |
-            <a
-              id="instagram_link"
-              target="_blank"
-              href="https://www.instagram.com/emudeck_official/"
-              >Instagram</a
-            >
+            <a id="twitter_link" target="_blank" href="https://twitter.com/emudeck">Twitter</a>
             |
             <a id="faqs_link" target="_blank" href="#faqs">Read the FAQS</a>
           </p>
 
-          <h3 class="h-sep">Do you want to support my work?</h3>
+          <h3 class="h-sep">Do you want to support our work?</h3>
+          <p>You can donate on Patreon so we can buy more devices besides the Steam Deck to port EmuDeck over.</p>
           <p>
-            <a
-              id="patreon_link"
-              target="_blank"
-              href="https://www.patreon.com/bePatron?u=29065992"
-              class="patreon_btn"
+            <a id="patreon_link" target="_blank" href="https://www.patreon.com/bePatron?u=29065992" class="patreon_btn"
               ><button>
                 <nobr
                   >Become a Patreon
-                  <svg
-                    height="22"
-                    width="22"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.82 2.398c-3.97 0-7.2 3.234-7.2 7.208 0 3.963 3.23 7.187 7.2 7.187 3.959 0 7.18-3.224 7.18-7.187 0-3.974-3.221-7.208-7.18-7.208zM2 21.598h3.516v-19.2H2v19.2z"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                    ></path>
+                  <svg height="22" width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.82 2.398c-3.97 0-7.2 3.234-7.2 7.208 0 3.963 3.23 7.187 7.2 7.187 3.959 0 7.18-3.224 7.18-7.187 0-3.974-3.221-7.208-7.18-7.208zM2 21.598h3.516v-19.2H2v19.2z" fill-rule="evenodd" clip-rule="evenodd"></path>
                   </svg>
                 </nobr></button
             ></a>
@@ -2295,14 +2194,33 @@
         </div>
       </div>
     </section>
-    <section class="section inverted" id="steam_input">
+    <section class="section inverted">
+      <div class="content center">
+        <div class="gridrow">
+          <div class="col_12">
+            <h2>Emulation Showcase</h2>
+            <p class="large">Take a look at some of the games you can play using EmuDeck.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content gridrow middle">
+        <div class="col_12">
+          <div class="imagecontainer">
+            <div class="video">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/JlhUPLTvksw?autoplay=1&playlist=JlhUPLTvksw&loop=1&controls=0&mute=1&rel=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <img src="img/hero.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section inverted" id="steam_input">
       <div class="content gridrow">
         <div class="col_6">
           <h2>Steam Input Special configuration</h2>
-          <p>
-            You can use Steam Deck's L4, L5, R4, R5 triggers to control some
-            emulator hotkeys
-          </p>
+          <p>You can use Steam Deck's L4, L5, R4, R5 triggers to control some emulator hotkeys</p>
         </div>
         <div class="col_6">
           <ol>
@@ -2315,14 +2233,13 @@
               <img src="img/select.png" />
             </li>
             <li>
-              Select the right template for the system you want. Repeat for
-              every game you want to use hotkeys
+              Select the right template for the system you want. Repeat for every game you want to use hotkeys
               <img src="img/template.png" />
             </li>
           </ol>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section inverted" id="faqs">
       <div class="content gridrow">
@@ -2331,183 +2248,80 @@
           <p>Troubleshot your problems</p>
         </div>
         <div class="col_8">
-          <ul>
-            <li>
-              <strong>Q: Is EmuDeck safe to install? </strong>
-              <br />
-              A: Of course, truth is, EmuDeck doesn't even get installed on your
-              system. EmuDeck just installs your Emulators automatically from
-              the same sources you'll use if done manually, the Discover App on
-              your Steam Deck. We configure those Emulators so you don't have to
-              and create the rom systems for you along some other stuff just to
-              make your life easier. If an Emulator is not on the Discover app
-              we will use the official GitHub source.
-            </li>
-            <li>
-              <strong>Q: Do I need sudo / root access? </strong>
-              <br />
-              A: No. EmuDeck does an expert mode that allows you to install
-              PowerTools, a utility that can overclock your SteamDeck so some
-              systems runs better, and that tools needs you to set a password to
-              your Steam Deck but that's <strong>completely optional</strong>.
-            </li>
-            <li>
-              <strong>Q: Does EmuDeck run on other Steam OS devices? </strong>
-              <br />
-              A: We support HoloISO devices and we plan on support the next
-              Anbernic Win600
-            </li>
-            <li>
-              <strong>Q: What about Windows or Android? </strong>
-              <br />
-              A: We are beta testing the Windows Edition right now, Android will
-              come later, but as of now you can test our baby brother
-              <a
-                id="pegasus_link_faqs"
-                href="https://www.pegasus-installer.com"
-                target="_blank"
-                >Pegasus Installer</a
-              >, it's similar to EmuDeck but for Android Handhelds
-            </li>
+          <ul class="faqs">
+            <li><strong>Q: Is EmuDeck safe to install?</strong></li>
+            <li>A: Yes! EmuDeck doesn't actually install on your system, but rather it downloads and installs emulators using the same sources you would use if installing them manually: the Discover app on your Steam Deck. EmuDeck will also configure those emulators and create a ROM file system to simplify the setup process. Emulators not hosted in the Discover app will be downloaded through their official GitHub source.</li>
 
-            <li>
-              <strong
-                >Q: Do you use RetroArch from the Discover store or from Steam?
-              </strong>
-              <br />
-              A: As of now we only support using RetroArch from the Discover app
-            </li>
+            <li><strong>Q: Do I need sudo / root access?</strong></li>
+            <li>A: No. EmuDeck does allow you to install plugins like PowerTools which will improve performance with some emulators. These tools do require you to set a sudo password, but they are completely optional.</li>
 
-            <li>
-              <strong>Q: My games are laggy</strong>
-              <br />
-              A: Make sure you haven't capped the Steam UI to 30FPS
-            </li>
+            <li><strong>Q: Does EmuDeck run on other Steam OS devices?</strong></li>
+            <li>A: We currently support the Anbernic Win600 and other devices running HoloISO.</li>
 
-            <li>
-              <strong>Q: Are you planing to do a Flatpak?</strong>
-              <br />
-              A: Not at the moment, Flatpak has several limitations that will prevent EmuDeck to work as intended.
-            </li>
+            <li><strong>Q: What about Windows or Android?</strong></li>
+            <li>A: We are beta testing the Windows Edition right now and Android is also in the works.</li>
 
-            <li>
-              <strong
-                >Q: In Steam Rom Manager everything looked fine but my games
-                don't have Artwork on Steam UI</strong
-              >
-              <br />
-              A: The first time you run Steam Rom Manager it will take a bit to
-              create the games, open the Event Log to make sure Steam Rom
-              Manager has finished working
-            </li>
+            <li><strong>Q: Do you use RetroArch from the Discover store or from Steam?</strong></li>
+            <li>A: We currently only support using RetroArch from the Discover app.</li>
 
-            <li>
-              <strong>Q: Yuzu won't exit using the Steam UI</strong>
-              <br />
-              A: Sometimes Yuzu takes some seconds to exit, just wait.
-            </li>
-            <li>
-              <strong>Q: How can I get new updates?</strong>
-              <br />
-              A: You can join our
-              <a target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a
-              >, We'll notify you there when a new update is live. You'll just
-              need to launch EmuDeck App from your desktop for everything to get
-              updated. You can also follow us on
-              <a
-                id="twitter_link_faq"
-                target="_blank"
-                href="https://twitter.com/emudeck"
-                >Twitter</a
-              >
-              or
-              <a
-                id="instagram_link_faq"
-                target="_blank"
-                href="https://www.instagram.com/emudeck_official/"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <strong
-                >Q: Is there a Hotkeys cheat sheet for every Emulator?</strong
-              >
-              <br />
-              A: Sure, just check my Github for more details
-              <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki/Hotkeys"
-                >cheat sheet</a
-              >
-            </li>
+            <li><strong>Q: Are you planing to release a Flatpak?</strong></li>
+            <li>A: Unfortunately creating an EmuDeck Flatpak is not possible at this time, as Flatpaks have several limitations that will prevent EmuDeck to work as intended.</li>
+
+            <li><strong>Q: How can I get notified of new updates?</strong></li>
+            <li>A: You can join our Discord, and we will notify you there when a new update is live. To update EmuDeck, simply launch the app from your desktop and the app will update itself upon launch. You can also follow us on <a id="twitter_link_faq" target="_blank" href="https://twitter.com/emudeck">Twitter</a> or join our <a target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a>.</li>
+
+            <li><strong>Q: Is there a Hotkeys cheat sheet for every Emulator?</strong></li>
+            <li>A: Sure, just visit our Github for a more detailed <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki/Hotkeys">cheat sheet</a>!</li>
+
+            <li><strong>Q: What emulators does EmuDeck install?</strong></li>
+            <li>A: RetroArch for most 2D systems and Nintendo DS and the Dolphin, DuckStation, Yuzu, Ryujinx, MAME, Xemu, Cemu, PPSSPP, PrimeHack, Citra, PCSX2, RPCS3, Vita3K and ScummVM.</li>
+
+            <li><strong>Q: I'm having issues running some games. What can I do?</strong></li>
+            <li>A: Join our <a target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a> or take a look at our <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki">Wiki</a>.</li>
           </ul>
         </div>
       </div>
     </section>
     <script>
-      document
-        .getElementById("download_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ download_deck: true });
-        });
-      document
-        .getElementById("reddit_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ reddit_link: true });
-        });
-      document
-        .getElementById("discord_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ discord_link: true });
-        });
-      document
-        .getElementById("twitter_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ twitter_link: true });
-        });
-      document
-        .getElementById("instagram_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ instagram_link: true });
-        });
-      document
-        .getElementById("faqs_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ faqs_link: true });
-        });
+      document.getElementById("download_link").addEventListener("click", function () {
+        dataLayer.push({ download_deck: true });
+      });
+      document.getElementById("reddit_link").addEventListener("click", function () {
+        dataLayer.push({ reddit_link: true });
+      });
+      document.getElementById("discord_link").addEventListener("click", function () {
+        dataLayer.push({ discord_link: true });
+      });
+      document.getElementById("twitter_link").addEventListener("click", function () {
+        dataLayer.push({ twitter_link: true });
+      });
+      // document.getElementById("instagram_link").addEventListener("click", function () {
+      //   dataLayer.push({ instagram_link: true });
+      // });
+      document.getElementById("faqs_link").addEventListener("click", function () {
+        dataLayer.push({ faqs_link: true });
+      });
 
-      document
-        .getElementById("patreon_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ patreon_link: true });
-        });
-      document
-        .getElementById("twitter_link_faq")
-        .addEventListener("click", function () {
-          dataLayer.push({ twitter_link: true });
-        });
-      document
-        .getElementById("instagram_link_faq")
-        .addEventListener("click", function () {
-          dataLayer.push({ instagram_link: true });
-        });
-      document
-        .getElementById("pegasus_link")
-        .addEventListener("click", function () {
-          dataLayer.push({ pegasus_link: true });
-        });
-      document
-        .getElementById("pegasus_link_faqs")
-        .addEventListener("click", function () {
-          dataLayer.push({ pegasus_link: true });
-        });
+      document.getElementById("patreon_link").addEventListener("click", function () {
+        dataLayer.push({ patreon_link: true });
+      });
+      document.getElementById("twitter_link_faq").addEventListener("click", function () {
+        dataLayer.push({ twitter_link: true });
+      });
+      // document.getElementById("instagram_link_faq").addEventListener("click", function () {
+      //   dataLayer.push({ instagram_link: true });
+      // });
+      // document.getElementById("pegasus_link").addEventListener("click", function () {
+      //   dataLayer.push({ pegasus_link: true });
+      // });
+      // document.getElementById("pegasus_link_faqs").addEventListener("click", function () {
+      //   dataLayer.push({ pegasus_link: true });
+      // });
     </script>
     <footer>
       <div class="footer-inner">
         <p>The Steam Deck and Steam Deck logos are property of Valve.</p>
-        <p>
-          We're not affiliated in any way with Steam or Valve, this is a fan
-          project made out of love for what Valve is doing for Linux and Gaming
-          in general
-        </p>
+        <p>We're not affiliated in any way with Steam or Valve, this is a fan project made out of love for what Valve is doing for Linux and Gaming in general</p>
       </div>
     </footer>
   </body>
