@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Install EmuDeck BETA
-Exec=echo "Downloading EmuDeck BETA, please wait" && mkdir -p ~/Applications && curl -L "$(curl -s https://api.github.com/repos/EmuDeck/emudeck-electron-beta/releases/latest | grep -E 'browser_download_url.*AppImage' | cut -d '"' -f 4)" > ~/Applications/EmuDeck-beta.AppImage && chmod +x ~/Applications/EmuDeck-beta.AppImage && curl -s https://raw.githubusercontent.com/dragoonDorise/EmuDeckWebsite/EmuDeckBeta.desktop > ~/Desktop/EmuDeck-beta.desktop && chmod +x ~/Applications/EmuDeck-beta.desktop && ~/Applications/EmuDeck-beta.AppImage && rm -rf ~/Desktop/EmuDeckBetaInstall.desktop && exit
+Exec=echo "Downloading EmuDeck BETA, please wait" && mkdir -p ~/Applications && curl -L "$(curl -s https://api.github.com/repos/EmuDeck/emudeck-electron-beta/releases/latest | grep -E 'browser_download_url.*AppImage' | cut -d '"' -f 4)" > ~/Applications/EmuDeck-beta.AppImage && chmod +x ~/Applications/EmuDeck-beta.AppImage && curl -L https://raw.githubusercontent.com/EmuDeck/EmuDeckWebsite/main/EmuDeckBeta.desktop > ~/Desktop/EmuDeckBeta.desktop && chmod +x ~/Applications/EmuDeckBeta.desktop && rm -rf ~/Desktop/EmuDeckBetaInstall.desktop  && ~/Applications/EmuDeck-beta.AppImage && exit
 Icon=steamdeck-gaming-return
 Terminal=true
 Type=Application
