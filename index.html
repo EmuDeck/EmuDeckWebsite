@@ -2007,6 +2007,9 @@
       .imagecontainer .video .iframe-container {
         margin-bottom: 0;
       }
+      .early-access.early-access {
+        background-color: rgb(251, 225, 109);
+      }
     </style>
   </head>
   <body>
@@ -2190,6 +2193,7 @@
         </div>
       </div>
     </section>
+    
     <section class="section" id="how_to_install">
       <div class="content gridrow">
         <div class="col_7">
@@ -2224,7 +2228,6 @@
         </div>
       </div>
     </section>
-
     <section class="section inverted gradient" id="download">
       <div class="content gridrow">
         <div class="col_7">
@@ -2265,24 +2268,30 @@
             |
             <a id="faqs_link" target="_blank" href="#faqs">Read the FAQs</a>
           </p>
-
-          <h3 class="h-sep">Interested in supporting EmuDeck?</h3>
-          <p>Considering supporting EmuDeck on Patreon so the team can buy more devices and port EmuDeck to other handhelds and systems.</p>
-          <p>
-            <a id="patreon_link" target="_blank" href="https://www.patreon.com/bePatron?u=29065992" class="patreon_btn"
-              ><button>
-                <nobr
-                  >Become a Patron
-                  <svg height="22" width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M14.82 2.398c-3.97 0-7.2 3.234-7.2 7.208 0 3.963 3.23 7.187 7.2 7.187 3.959 0 7.18-3.224 7.18-7.187 0-3.974-3.221-7.208-7.18-7.208zM2 21.598h3.516v-19.2H2v19.2z"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </nobr></button
-            ></a>
+          
+        </div>
+      </div>
+    </section>
+    <section class="section early-access">
+      <div class="content gridrow">
+        <div class="col_12 center">
+          <h2>Introducing Early Access</h2>
+          <p class="large">
+            Interested in getting new features early? Support EmuDeck on Patreon for a sneak peek of the lastest features like Windows Support, Cloud Saved games, and more to come :)
           </p>
+          <a id="patreon_link_early" target="_blank" href="https://www.patreon.com/bePatron?u=29065992" class="patreon_btn"
+            ><button>
+              <nobr
+                >Become a Patron
+                <svg height="22" width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.82 2.398c-3.97 0-7.2 3.234-7.2 7.208 0 3.963 3.23 7.187 7.2 7.187 3.959 0 7.18-3.224 7.18-7.187 0-3.974-3.221-7.208-7.18-7.208zM2 21.598h3.516v-19.2H2v19.2z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </nobr></button
+          ></a>
         </div>
       </div>
     </section>
@@ -2465,6 +2474,9 @@
       });
       document.getElementById("patreon_link_top").addEventListener("click", function () {
         dataLayer.push({ patreon_link_top: true });
+      });
+      document.getElementById("patreon_link_early").addEventListener("click", function () {
+        dataLayer.push({ patreon_link_early: true });
       });
       document.getElementById("twitter_link_faq").addEventListener("click", function () {
         dataLayer.push({ twitter_link: true });
