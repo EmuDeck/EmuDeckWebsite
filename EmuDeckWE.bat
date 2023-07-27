@@ -1,0 +1,2 @@
+@echo off
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmuDeck/emudeck-we/early/install.ps1'))}"
