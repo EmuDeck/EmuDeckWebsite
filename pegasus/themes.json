@@ -1,0 +1,64 @@
+[
+  {
+    "name": "clearOS",
+    "url": "https://github.com/PlayingKarrde/clearOS",
+    "screenshots": [
+      "https://camo.githubusercontent.com/1facafe0e7d22fc927a783decb6272c4491d3cba6da033e9b10131afacf586a1/68747470733a2f2f692e696d6775722e636f6d2f5855765a496a782e706e67",
+      "https://camo.githubusercontent.com/461e9c07a33a832be8451703e0af3dbcb3df03dc75fc76835854cb00baa44970/68747470733a2f2f692e696d6775722e636f6d2f355579634b56492e706e67"
+    ],
+    "autor": "PlayingKarrde"
+  },
+  {
+    "name": "gameOS",
+    "url": "https://github.com/PlayingKarrde/gameOS",
+    "screenshots": [
+      "https://pegasus-frontend.org/tools/themes/img/screenshots/github.com/PlayingKarrde/gameOS/YXNzZXRzL2ltYWdlcy9zY3JlZW5zaG90LnBuZw==.png",
+      "https://www.emudeck.com/pegasus/pictures/gameOS/2.jpg"
+    ],
+    "autor": "PlayingKarrde"
+  },
+  {
+    "name": "Minimis",
+    "url": "https://github.com/waldnercharles/Minimis",
+    "screenshots": [
+      "https://camo.githubusercontent.com/7b8658d00ee5e9a5b220e51b6d60f14f139f5303c7f97435b192f142bf272682/68747470733a2f2f692e696d6775722e636f6d2f7553535a5477572e706e67",
+      "https://camo.githubusercontent.com/8ee9ec8fb0aeda12cbd7df7fa0bc3e00e054ae54be0b9977e778d032abf44ceb/68747470733a2f2f692e696d6775722e636f6d2f774e3275586a492e706e67"
+    ],
+    "autor": "waldnercharles"
+  },
+  {
+    "name": "Flixnet",
+    "url": "https://github.com/mmatyas/pegasus-theme-flixnet",
+    "screenshots": [
+      "https://pegasus-frontend.org/tools/themes/img/screenshots/github.com/mmatyas/pegasus-theme-flixnet/Lm1ldGEvc2NyZWVuc2hvdC5qcGc=.jpg"
+    ],
+    "autor": "mmatyas"
+  },
+  {
+    "name": "RetroMega Next",
+    "url": "https://github.com/plaidman/retromega-next",
+    "screenshots": [
+      "https://pegasus-frontend.org/tools/themes/img/screenshots/github.com/plaidman/retromega-next/Lm1ldGEvc2NyZWVuc2hvdHMvcmVhZG1lL2NvbGxlY3Rpb25zLnBuZw==.png",
+      "https://pegasus-frontend.org/tools/themes/img/screenshots/github.com/plaidman/retromega-next/Lm1ldGEvc2NyZWVuc2hvdHMvcmVhZG1lL2xpZ2h0bW9kZS5wbmc=.png"
+    ],
+    "autor": "plaidman"
+  },
+  {
+    "name": "Shin Retro",
+    "url": "https://github.com/TigraTT-Driver/shinretro",
+    "screenshots": [
+      "https://github.com/TigraTT-Driver/shinretro/raw/master/assets/screenshot/collection_dark.png",
+      "https://github.com/TigraTT-Driver/shinretro/raw/master/assets/screenshot/home_dark.png"
+    ],
+    "autor": "TigraTT-Driver"
+  },
+  {
+    "name": "Skyline++",
+    "url": "https://github.com/ismaelestalayo/skylineOSP",
+    "screenshots": [
+      "https://github.com/ismaelestalayo/skylineOSP/raw/master/assets/images/screenshot_systems.png",
+      "https://github.com/ismaelestalayo/skylineOSP/raw/master/assets/images/screenshot_wii.png"
+    ],
+    "autor": "ismaelestalayo"
+  }
+]
