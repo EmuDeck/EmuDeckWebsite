@@ -366,17 +366,17 @@
       .section.bgimage h6,
       .section.bgimage p,
       .section.bgimage ul,
-      .section.inverted h1,
-      .section.inverted h2,
-      .section.inverted h3,
-      .section.inverted h4,
-      .section.inverted h5,
-      .section.inverted h6 {
+      .inverted h1,
+      .inverted h2,
+      .inverted h3,
+      .inverted h4,
+      .inverted h5,
+      .inverted h6 {
         color: #fff;
       }
-      .section.inverted p,
-      .section.inverted ul {
-        color: #b8bcbf;
+      .inverted p,
+      .inverted ul {
+        color: #fff;
       }
       .section.inverted.whitecopy p,
       .section.inverted.whitecopy ul {
@@ -2015,7 +2015,7 @@
         background-color: rgb(251, 225, 109);
       }
       #download{
-        position: relative
+        position: relative;
         background: #000
       }
 
@@ -2160,6 +2160,10 @@
       }
       .emumodal__footer{
 
+      }
+
+      #how_to_install{
+        background: linear-gradient(to right, #fff 50%, #3498db 50%);
       }
 
 
@@ -2341,12 +2345,18 @@
         </div>
       </div>
     </section>
-
+    <!-- <section class="section" id="how_to_install"">
+    <div class="content">
+    <h2>EmuDeck Installation Guides</h2>
+    <p>Watch the video guides by RetroGameCorps</p>
+    </div>
+    </section> -->
     <section class="section" id="how_to_install">
       <div class="content gridrow">
-        <div class="col_7">
-          <h2>EmuDeck Installation Guide</h2>
-          <p>Follow the simple guide here or watch this amazing video by RetroGameCorps</p>
+
+        <div class="col_6">
+          <h3>SteamOS Guide</h3>
+          <p>Learn how to install and use EmuDeck on SteamOS and Linux</p>
           <div class="iframe-container">
             <iframe
               src="https://www.youtube-nocookie.com/embed/Y5r2WZAImuY"
@@ -2357,22 +2367,18 @@
             ></iframe>
           </div>
         </div>
-        <div class="col_5">
-          <ol>
-            <li>
-              If you are using an SD Card,
-              <strong>format your SD Card in Game Mode on SteamOS. SD Cards need to be formatted as ext4 (or btrfs) to be compatible with EmuDeck</strong>.
-            </li>
-            <li> Switch to Desktop Mode by pressing the STEAM button, then the Power button, and select Switch to Desktop. Download the <a href="#download">EmuDeck Installer</a>. Copy the installer to your Steam Deck's desktop. Run the EmuDeck Installer.</li>
-            <li>Copy your games to the Emulation/roms folder created by the installer. Open Steam ROM Manager through EmuDeck. Each parser corresponds to an emulator or tool. Enable which parsers you would like to use.</li>
-            <li>
-              After you have selected your parsers: Click on Preview. Click Parse. Wait for all the images to download. Click Save apps to Steam. The first time may take a few moments, After it saves successfully, your selected ROMs and tools will be added to your Steam library.
-            </li>
-            <li>Close Steam Rom Manager. Click "Return to Game Mode" on your desktop and your EmuDeck install is now complete!</li>
-          </ol>
-          <p>
-            <br />
-            EmulationStation-DE: Interested in using EmulationStation-DE as a front-end? Select the EmulationStationDE parser in Steam ROM Manager. Mix and match. Add some of your ROMs to your Steam library and manage the rest in EmulationStation-DE!
+        <div class="col_6 inverted">
+          <h3>Windows Guide</h3>
+          <p>Learn how to install and use EmuDeck on Windows devices</p>
+          <div class="iframe-container">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/uLQWOS6KwVM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
