@@ -2097,6 +2097,10 @@
         font-size: 10px;
       }
 
+      .faqs__code{
+        font-size: 14px;
+      }
+
       .emumodal{
         position: fixed;
         top: 0;
@@ -2622,14 +2626,22 @@
 
             <li><strong>Q: Do I need sudo / root access?</strong></li>
             <li>
-              A: No. EmuDeck does allow you to install plugins like PowerTools which will allow you to manage performance settings. These tools do require you to set a sudo password, but they are completely optional.
+              A: Not on SteamOS or ChimeraOS. EmuDeck does allow you to install plugins like PowerTools which will allow you to manage performance settings. These tools do require you to set a sudo password, but they are completely optional. <strong>In Linux you'll need your sudo password in order to install all our dependencies</strong>
             </li>
 
-            <li><strong>Q: Does EmuDeck run on other Steam OS devices?</strong></li>
-            <li>A: EmuDeck currently supports the Anbernic Win600 and other devices running HoloISO.</li>
+            <li><strong>Q: What are the Linux dependencies?</strong></li>
+            <li>
+              <code class="faqs__code">
+                DEBIAN_DEPS="jq zenity flatpak unzip bash libfuse2 git rsync whiptail"<br/>
+                ARCH_DEPS="steam jq zenity flatpak unzip bash fuse2 git rsync whiptail"<br/>
+                FEDORA_DEPS="jq zenity flatpak unzip bash fuse git rsync  whiptail"<br/>
+                SUSE_DEPS="steam jq zenity flatpak unzip bash libfuse2 git rsync whiptail"<br/>
+                VOID_DEPS="steam jq zenity flatpak unzip bash fuse git rsync whiptail"
+              </code>
+            </li>
 
             <li><strong>Q: What about Windows or Android?</strong></li>
-            <li>A: EmuDeck is beta testing the Windows Edition right now. Android is also in the works.</li>
+            <li>A: EmuDeck for Windows is in beta testing right now. Android is also in the works.</li>
 
             <li><strong>Q: Do you use RetroArch from the Discover store or from Steam?</strong></li>
             <li>A: EmuDeck currently only supports using RetroArch from the Discover store.</li>
@@ -2651,19 +2663,19 @@
             <li><strong>Q: Is there a Hotkeys cheat sheet for the various emulators?</strong></li>
             <li>
               A: Sure, just visit the EmuDeck Wiki for a more detailed
-              <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki/Hotkeys">cheat sheet</a>!
+              <a target="_blank" href="https://emudeck.github.io/controls-and-hotkeys/steamos/hotkeys/">cheat sheet</a>!
             </li>
 
             <li><strong>Q: What does EmuDeck install?</strong></li>
             <li>
               A:
-              <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki/frequently-asked-questions#what-does-emudeck-install">List of Projects installed by EmuDeck</a>
+              <a target="_blank" href="https://emudeck.github.io/frequently-asked-questions/steamos/#what-does-emudeck-install">List of Projects installed by EmuDeck</a>
             </li>
 
             <li><strong>Q: I'm having issues running some games. What can I do?</strong></li>
             <li>
               A: Join the EmuDeck <a target="_blank" href="https://discord.gg/b9F7GpXtFP">Discord</a> or take a look at the EmuDeck
-              <a target="_blank" href="https://github.com/dragoonDorise/EmuDeck/wiki">Wiki</a>.
+              <a target="_blank" href="https://emudeck.github.io/">Wiki</a>.
             </li>
           </ul>
         </div>
