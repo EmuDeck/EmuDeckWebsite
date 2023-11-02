@@ -2053,7 +2053,7 @@
           justify-content: space-evenly;
           margin: 100px 0;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           .download_links{
            flex-wrap: wrap;
           }
@@ -2065,14 +2065,15 @@
           flex-direction: column;
           justify-content: flex-end;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           .download_links li{
             max-width: 40%;
             margin-bottom: 32px;
           }
         }
         .download_links img{
-          margin-bottom: 42px;
+          margin-bottom: 32px;
+          max-width: 80%
         }
 
         .download_links li button svg{
@@ -2469,6 +2470,29 @@
                 ></a>
 
               </li>
+              <li style="display:none">
+                <img src="img/appleLogo.png" alt="MacOS">
+                <a href="#early-access" id="download_link_macos" class="patreon_btn"
+                  ><button>
+                    <nobr
+                      >MacOS
+                      <svg
+                        class="rightarrow"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
+                        ></path>
+                      </svg>
+                    </nobr></button
+                ></a>
+
+              </li>
 
             </ul>
             <h3 class="h-sep">Need any help or want to contact the EmuDeck team?</h3>
@@ -2696,7 +2720,7 @@
           <h6>Linux Installation</h6>
         </div>
         <div class="emumodal__body">
-          <p>Execute this line of code in your terminal of choice</p>
+          <p>Execute this line of code in your terminal of choice and we will also take care of installing all the EmuDeck dependencies.</p><p><strong>Expect your sudo password to install those dependencies</strong></p>
           <code>
             sh -c 'curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash'
           </code>
