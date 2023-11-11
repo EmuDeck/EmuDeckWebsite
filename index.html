@@ -2175,6 +2175,50 @@
         }
       }
 
+      #oled{
+        overflow: hidden;
+        position: relative;
+        background: #000;
+      }
+      @keyframes colorChange {
+        from {
+          transform:scaleX(0.75)
+        }
+        50% {
+          transform:scaleX(1.75)
+        }
+        to {
+          transform:scaleX(0.75)
+        }
+       }
+
+      #oled:before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(237,0,46,1) 0%, rgba(121,9,39,1) 46%, rgba(0,0,0,1) 90%);
+        background-repeat: no-repeat;
+        animation: colorChange 8s infinite alternate linear;
+      }
+      #oled .content{
+        position: relative;
+      }
+      #oled span{
+        color:rgba(249, 56, 34, 1);
+        text-shadow: 2px 3px rgba(0,0,0,.4);
+      }
+      #oled .oled__deck{
+        position:absolute;
+        left: 0;
+        width: 100%;
+        max-width: 800px;
+        right: 0;
+        bottom: -162px;
+        /*bottom: -11vw*/
+      }
 
 
     </style>
@@ -2194,7 +2238,7 @@
         </div>
       </div>
     </header>
-    <section class="section inverted gradient">
+    <!-- <section id="oled" class="section inverted">
       <div class="content gridrow">
         <div class="col_12 center">
           <h2>Play all your retro games on the go</h2>
@@ -2221,6 +2265,38 @@
             <img src="img/hero.png" />
           </div>
         </div>
+      </div>
+    </section> -->
+    <section id="oled" class="section inverted">
+      <div class="content gridrow">
+        <div class="col_12 center">
+          <h2>Fancy a new Steam Deck <span>OLED</span>?</h2>
+          <p class="large">
+            Download our Import and Export tools so you can transfer your saved games from one Deck to the new one.
+          </p>
+          <ul class="download_links">
+            <li>
+              <a class="patreon_btn" href="EmuDeckExportSaves.desktop" id="download_export"><button>
+                  <nobr>Export Tool
+                    <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
+                    </svg>
+                  </nobr></button></a>
+            </li>
+            <li>
+              <a class="patreon_btn" href="EmuDeckImportSaves.desktop" id="download_import"><button>
+                  <nobr>Import Tool
+                    <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
+                    </svg>
+                  </nobr></button></a>
+            </li>
+          </ul>
+          <img class="oled__deck" src="img/deckoled.png" />
+        </div>
+      </div>
+      <div class="content gridrow">
+
       </div>
     </section>
     <section class="section inverted">
@@ -2345,7 +2421,7 @@
           <div class="col_6">
             <h2>SteamOS, Windows, and Rog Ally</h2>
             <p class="large">
-              EmuDeck for Windows will launch as a stable release before 2024, with a Public Beta coming soon after Windows. Check our Patreon for updates on the development of these and other features
+              EmuDeck for Windows will launch as a stable release before 2024, with a Public Beta available now. Check our Patreon for updates on the development of these and other features.
             </p>
           </div>
           <div class="col_6">
