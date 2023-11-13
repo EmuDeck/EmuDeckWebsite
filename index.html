@@ -2053,6 +2053,12 @@
           justify-content: space-evenly;
           margin: 100px 0;
         }
+        .download_links--hero{
+          margin: 50px 0 120px 0;
+        }
+        .emumodal__body .download_links{
+          margin: 10px 0;
+        }
         @media screen and (max-width: 991px) {
           .download_links{
            flex-wrap: wrap;
@@ -2065,6 +2071,18 @@
           flex-direction: column;
           justify-content: flex-end;
         }
+        .emumodal__body .download_links li{
+          max-width: 100%;
+        }
+
+        .emumodal__body p{
+          margin-bottom: 12px;
+        }
+
+        .emumodal__body ol{
+          margin-bottom: 16px
+        }
+
         @media screen and (max-width: 991px) {
           .download_links li{
             max-width: 40%;
@@ -2274,18 +2292,10 @@
           <p class="large">
             Download our Import and Export tools so you can transfer your saved games from one Deck to the new one.
           </p>
-          <ul class="download_links">
+          <ul class="download_links download_links--hero">
             <li>
               <a class="patreon_btn" href="EmuDeckExportSaves.desktop" id="download_export"><button>
-                  <nobr>Export Tool
-                    <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
-                    </svg>
-                  </nobr></button></a>
-            </li>
-            <li>
-              <a class="patreon_btn" href="EmuDeckImportSaves.desktop" id="download_import"><button>
-                  <nobr>Import Tool
+                  <nobr>Download Tool
                     <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
                     </svg>
@@ -2818,7 +2828,7 @@
         </p>
       </div>
       <div id="linux_modal"  class="emumodal">
-        <div class="emumodal__box senta">
+        <div class="emumodal__box">
         <div class="emumodal__header">
           <h6>Linux Installation</h6>
         </div>
@@ -2827,6 +2837,47 @@
           <code>
             sh -c 'curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install.sh | bash'
           </code>
+        </div>
+        <div class="emumodal__footer"></div>
+        </div>
+      </div>
+      <div id="oled_modal"  class="emumodal">
+        <div class="emumodal__box">
+        <div class="emumodal__header">
+          <h6>Tool Instructions</h6>
+        </div>
+        <div class="emumodal__body">
+          <p><strong>Importing from Internal Storage</strong></p>
+          <ol>
+            <li>Download the export tool to your Current Steam Deck</li>
+            <li>Plug an USB Drive  / SD Card and run the tool</li>
+            <li>Download the import tool to your New Steam Deck</li>
+            <li>Install EmuDeck from scratch</li>
+            <li>Plug the previous drive in your new Steam Deck</li>
+            <li>Run the tool</li>
+            <li>Move your roms manually, run Steam Rom Manager and that's it</li>
+          </ol>
+<p><strong>Importing from SD Card</strong></p>
+          <ol>  <li>Same steps as before since some saves are stored in the internal storage too</li>
+        </ol>
+          <ul class="download_links">
+          <li>
+            <a class="patreon_btn" href="EmuDeckExportSaves.desktop" id="download_export"><button>
+                <nobr>Export Tool
+                  <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
+                  </svg>
+                </nobr></button></a>
+          </li>
+          <li>
+            <a class="patreon_btn" href="EmuDeckImportSaves.desktop" id="download_import"><button>
+                <nobr>Import Tool
+                  <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
+                  </svg>
+                </nobr></button></a>
+          </li>
+
         </div>
         <div class="emumodal__footer"></div>
         </div>
@@ -2842,6 +2893,13 @@
         }
       });
 
+      document.getElementById("oled_modal").addEventListener("click", function (e) {
+        if (e.target.id === "oled_modal") {
+          e.preventDefault();
+          this.classList.remove('is-shown');
+        }
+      });
+
       document.getElementById("download_link_chimera").addEventListener("click", function () {
         alert("Download the AppImage to your Downloads folder, then right-click on it and enable the 'Allow executing file as program' checkbox.");
       });
@@ -2849,6 +2907,11 @@
       document.getElementById("download_link_linux").addEventListener("click", function (e) {
         e.preventDefault()
         document.getElementById("linux_modal").classList.add('is-shown')
+      });
+
+      document.getElementById("download_export").addEventListener("click", function (e) {
+        e.preventDefault();
+        document.getElementById("oled_modal").classList.add('is-shown')
       });
 
       document.getElementById("download_link").addEventListener("click", function () {
