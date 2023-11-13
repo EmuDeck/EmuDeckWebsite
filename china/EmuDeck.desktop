@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=sh -c 'curl -L https://china.emudeck.com/EmuDeck/install.sh | bash'
+GenericName[en_US]=
+GenericName=
+MimeType=
+Name[en]=Install EmuDeck
+Name[es]=Instalar EmuDeck
+Name=Install EmuDeck
+Path=
+StartupNotify=false
+Terminal=true
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

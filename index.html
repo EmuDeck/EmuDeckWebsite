@@ -2294,7 +2294,7 @@
           </p>
           <ul class="download_links download_links--hero">
             <li>
-              <a class="patreon_btn" href="EmuDeckExportSaves.desktop" id="download_export"><button>
+              <a class="patreon_btn" href="#" id="download_export"><button>
                   <nobr>Download Tool
                     <svg class="rightarrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill="currentColor" d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"></path>
@@ -2885,6 +2885,36 @@
     </footer>
 
     <script>
+
+      // Function to detect user location
+      function detectLocation() {
+        // Make a request to an IP geolocation service
+        fetch('https://ipapi.co/json/')
+          .then(response => response.json())
+          .then(data => {
+            // Get the country from the response
+            const country = data.country;
+
+            // Check if the country is China
+            if (country === 'CN') {
+              console.log('The user is in China.');
+              let href= document.getElementById("download_link").getAttribute('href')
+              document.getElementById("download_link").setAttribute('href',`china/${href}`)
+
+              href= document.getElementById("download_export").getAttribute('href')
+              document.getElementById("download_export").setAttribute('href',`china/${href}`)
+
+              href= document.getElementById("download_import").getAttribute('href')
+              document.getElementById("download_import").setAttribute('href',`china/${href}`)
+            }
+          })
+          .catch(error => {
+            console.error('Error detecting location:', error);
+          });
+      }
+
+      // Call the function to initiate location detection
+      detectLocation();
 
       document.getElementById("linux_modal").addEventListener("click", function (e) {
         if (e.target.id === "linux_modal") {
