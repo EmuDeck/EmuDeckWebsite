@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+ [Desktop Entry]
+ Name=EmuDeck BETA
+ Exec=/home/deck/Applications/EmuDeck-beta.AppImage
+ Icon=steamdeck-gaming-return
+ Terminal=false
+ Type=Application
+ StartupNotify=false
