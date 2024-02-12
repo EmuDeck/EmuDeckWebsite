@@ -577,6 +577,9 @@
 		transition-duration: 0.15s;
 		font-weight: 500;
 	  }
+	  .download_links button{
+		  padding: 0.8em;
+	  }
 	  .gradient button,
 	  button.dark {
 		background-color: #1b1b1b;
@@ -2322,8 +2325,8 @@
 		  ></iframe>
 		  </div>
 		</div>
-		<img class="fade_out" src="img/hero_ally.png" />
-		<img class="fade_in" src="img/hero.png" />
+		<img class="fade_out" src="img/hero.png" />
+		<img class="fade_in" src="img/hero-android.png" />
 		</div>
 	  </div>
 	  </div>
@@ -2451,7 +2454,7 @@
 		  <div class="col_6">
 			<h2>SteamOS, Windows, and Rog Ally</h2>
 			<p class="large">
-			  EmuDeck for Windows will launch as a stable release before 2024, with a Public Beta available now. Check our Patreon for updates on the development of these and other features.
+			  EmuDeck for Windows gives you the same easo of use than our SteamOS version. Check our Patreon for updates on the development of these and other features.
 			</p>
 		  </div>
 		  <div class="col_6">
@@ -2530,19 +2533,6 @@
 				  ><button>
 					<nobr
 					  >SteamOS
-					  <svg
-						class="rightarrow"
-						width="32"
-						height="32"
-						viewBox="0 0 32 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					  >
-						<path
-						  fill="currentColor"
-						  d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-						></path>
-					  </svg>
 					</nobr></button
 				></a>
 			  </li>
@@ -2552,19 +2542,6 @@
 				  ><button>
 					<nobr
 					  >ChimeraOS
-					  <svg
-						class="rightarrow"
-						width="32"
-						height="32"
-						viewBox="0 0 32 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					  >
-						<path
-						  fill="currentColor"
-						  d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-						></path>
-					  </svg>
 					</nobr></button
 				></a>
 			  </li>
@@ -2574,19 +2551,6 @@
 				  ><button>
 					<nobr
 					  >Linux
-					  <svg
-						class="rightarrow"
-						width="32"
-						height="32"
-						viewBox="0 0 32 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					  >
-						<path
-						  fill="currentColor"
-						  d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-						></path>
-					  </svg>
 					</nobr></button
 				></a>
 
@@ -2596,47 +2560,32 @@
 				<a href="#early-access" id="download_link_windows"
 				  ><button>
 					<nobr
-					  >Windows Beta
-					  <svg
-						class="rightarrow"
-						width="32"
-						height="32"
-						viewBox="0 0 32 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					  >
-						<path
-						  fill="currentColor"
-						  d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-						></path>
-					  </svg>
+					  >Windows
 					</nobr></button
 				></a>
 
 			  </li>
-			  <li style="display:none">
+			  <li>
+				  <img src="img/androidLogo.png" alt="Android">
+				  <a href="#early-access" id="download_link_android" class="patreon_btn"
+					><button>
+					  <nobr
+						>Android Early
+					  </nobr></button
+				  ></a>
+
+				</li>
+
+			  <!-- <li>
 				<img src="img/appleLogo.png" alt="MacOS">
 				<a href="#early-access" id="download_link_macos" class="patreon_btn"
 				  ><button>
 					<nobr
 					  >MacOS
-					  <svg
-						class="rightarrow"
-						width="32"
-						height="32"
-						viewBox="0 0 32 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					  >
-						<path
-						  fill="currentColor"
-						  d="M16.4091 8.48003L21.5024 13.5734L1.98242 13.5734L1.98242 18.0178H21.5024L16.4091 23.1111L19.5558 26.2578L30.018 15.7956L19.5558 5.33337L16.4091 8.48003Z"
-						></path>
-					  </svg>
 					</nobr></button
 				></a>
 
-			  </li>
+			  </li> -->
 
 			</ul>
 			<h3 class="h-sep">Need any help or want to contact the EmuDeck team?</h3>
@@ -2662,12 +2611,12 @@
 		<div class="col_12 center">
 		  <h2>Introducing Early Access</h2>
 		  <p class="large">
-			Interested in getting new features early? Support EmuDeck on Patreon for a sneak peek of the latest features like Synced Saves across different EmuDeck installation and even other platform like OnionOS, local multiplayer, interoperability with other platforms, and more things to come!
+			Interested in getting new features early? Support EmuDeck on Patreon for a sneak peek of the latest features like Synced Saves across different EmuDeck installation and even other platform like OnionOS, Android support, and more things to come!
 		  </p>
 		  <a id="patreon_link_early" target="_blank" href="https://www.patreon.com/bePatron?u=29065992" class="patreon_btn"
 			><button>
 			  <nobr
-				>Become a Patron
+				>Become a Patron to get Early Access
 				<svg height="22" width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				  <path
 					d="M14.82 2.398c-3.97 0-7.2 3.234-7.2 7.208 0 3.963 3.23 7.187 7.2 7.187 3.959 0 7.18-3.224 7.18-7.187 0-3.974-3.221-7.208-7.18-7.208zM2 21.598h3.516v-19.2H2v19.2z"
