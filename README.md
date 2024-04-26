@@ -1,2 +1,0 @@
-# EmuDeckDesktop
-Installers for EmuDeck
