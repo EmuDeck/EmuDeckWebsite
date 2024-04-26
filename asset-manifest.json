@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ead904ab.css",
-    "main.js": "/static/js/main.c5d9b6bd.js",
+    "main.css": "/static/css/main.441f36d5.css",
+    "main.js": "/static/js/main.2f571215.js",
     "static/js/453.5615ffab.chunk.js": "/static/js/453.5615ffab.chunk.js",
     "static/media/hero-steamos.png": "/static/media/hero-steamos.43912610e9466fe475a0.png",
     "static/media/hero-windows.png": "/static/media/hero-windows.c9eb6e70d8a44d62c74b.png",
@@ -16,15 +16,16 @@
     "static/media/avenir-medium-webfont.woff2": "/static/media/avenir-medium-webfont.ff8afe24d18b3638bd70.woff2",
     "static/media/avenir-roman-webfont.woff2": "/static/media/avenir-roman-webfont.7a1177012162742990ea.woff2",
     "static/media/avenir-light-webfont.woff2": "/static/media/avenir-light-webfont.d196085b8931cbd397e4.woff2",
+    "static/media/logo-xs.svg": "/static/media/logo-xs.de54e09887fdac165eaf8ff2912f92d0.svg",
     "static/media/logo.svg": "/static/media/logo.87dfa5ab2f8f1880822e48aeee5a5de7.svg",
     "index.html": "/index.html",
     "static/media/chevron.svg": "/static/media/chevron.0cbc2dd4abc453982104d7bcfab3e90e.svg",
-    "main.ead904ab.css.map": "/static/css/main.ead904ab.css.map",
-    "main.c5d9b6bd.js.map": "/static/js/main.c5d9b6bd.js.map",
+    "main.441f36d5.css.map": "/static/css/main.441f36d5.css.map",
+    "main.2f571215.js.map": "/static/js/main.2f571215.js.map",
     "453.5615ffab.chunk.js.map": "/static/js/453.5615ffab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ead904ab.css",
-    "static/js/main.c5d9b6bd.js"
+    "static/css/main.441f36d5.css",
+    "static/js/main.2f571215.js"
   ]
 }
