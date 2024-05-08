@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee2e953d.css",
-    "main.js": "/static/js/main.39125ae5.js",
+    "main.css": "/static/css/main.c7ec5b4a.css",
+    "main.js": "/static/js/main.d0b970dc.js",
     "static/js/453.5615ffab.chunk.js": "/static/js/453.5615ffab.chunk.js",
     "static/media/hero-steamos.png": "/static/media/hero-steamos.43912610e9466fe475a0.png",
     "static/media/hero-windows.png": "/static/media/hero-windows.c9eb6e70d8a44d62c74b.png",
@@ -12,7 +12,6 @@
     "static/media/ally.png": "/static/media/ally.9eeb4497a726ad26fc9c.png",
     "static/media/androidLogo.png": "/static/media/androidLogo.fcf103f26917a4ce4be6.png",
     "static/media/appleLogo.png": "/static/media/appleLogo.25e3abe6a16c9921cef2.png",
-    "static/media/steamOSlogo.png": "/static/media/steamOSlogo.588a6dbbd438ab0f1f9c.png",
     "static/media/avenir-medium-webfont.woff2": "/static/media/avenir-medium-webfont.ff8afe24d18b3638bd70.woff2",
     "static/media/avenir-roman-webfont.woff2": "/static/media/avenir-roman-webfont.7a1177012162742990ea.woff2",
     "static/media/avenir-light-webfont.woff2": "/static/media/avenir-light-webfont.d196085b8931cbd397e4.woff2",
@@ -20,12 +19,12 @@
     "static/media/logo.svg": "/static/media/logo.87dfa5ab2f8f1880822e48aeee5a5de7.svg",
     "index.html": "/index.html",
     "static/media/chevron.svg": "/static/media/chevron.0cbc2dd4abc453982104d7bcfab3e90e.svg",
-    "main.ee2e953d.css.map": "/static/css/main.ee2e953d.css.map",
-    "main.39125ae5.js.map": "/static/js/main.39125ae5.js.map",
+    "main.c7ec5b4a.css.map": "/static/css/main.c7ec5b4a.css.map",
+    "main.d0b970dc.js.map": "/static/js/main.d0b970dc.js.map",
     "453.5615ffab.chunk.js.map": "/static/js/453.5615ffab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee2e953d.css",
-    "static/js/main.39125ae5.js"
+    "static/css/main.c7ec5b4a.css",
+    "static/js/main.d0b970dc.js"
   ]
 }
