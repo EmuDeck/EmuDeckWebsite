@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee9a674b.css",
-    "main.js": "/static/js/main.3cd55f04.js",
+    "main.css": "/static/css/main.afae5735.css",
+    "main.js": "/static/js/main.5252e21c.js",
     "static/js/453.5615ffab.chunk.js": "/static/js/453.5615ffab.chunk.js",
     "static/media/hero-steamos.png": "/static/media/hero-steamos.43912610e9466fe475a0.png",
     "static/media/hero-windows.png": "/static/media/hero-windows.c9eb6e70d8a44d62c74b.png",
     "static/media/steam.png": "/static/media/steam.549678898e43c11b6f89.png",
     "static/media/hero-android.png": "/static/media/hero-android.3a7d19c9492a284dcd13.png",
+    "static/media/emudeck_machine.png": "/static/media/emudeck_machine.581eebdd658d99dfc255.png",
     "static/media/ChimeraOSlogo.svg": "/static/media/ChimeraOSlogo.c8ac3d15cf8e29886c34986455b1a608.svg",
     "static/media/linuxLogo.png": "/static/media/linuxLogo.bf6f7aa5fc8277bbde3c.png",
     "static/media/ally.png": "/static/media/ally.9eeb4497a726ad26fc9c.png",
@@ -19,12 +20,12 @@
     "static/media/logo.svg": "/static/media/logo.87dfa5ab2f8f1880822e48aeee5a5de7.svg",
     "index.html": "/index.html",
     "static/media/chevron.svg": "/static/media/chevron.0cbc2dd4abc453982104d7bcfab3e90e.svg",
-    "main.ee9a674b.css.map": "/static/css/main.ee9a674b.css.map",
-    "main.3cd55f04.js.map": "/static/js/main.3cd55f04.js.map",
+    "main.afae5735.css.map": "/static/css/main.afae5735.css.map",
+    "main.5252e21c.js.map": "/static/js/main.5252e21c.js.map",
     "453.5615ffab.chunk.js.map": "/static/js/453.5615ffab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee9a674b.css",
-    "static/js/main.3cd55f04.js"
+    "static/css/main.afae5735.css",
+    "static/js/main.5252e21c.js"
   ]
 }
