@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=sh -c 'curl -L https://raw.githubusercontent.com/dragoonDorise/EmuDeck/main/install-beta.sh | bash'
+GenericName[en_US]=
+GenericName=
+MimeType=
+Name[en]=Install EmuDeck Beta
+Name[es]=Instalar EmuDeck Beta
+Name=Install EmuDeck Beta
+Path=
+StartupNotify=false
+Terminal=true
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
