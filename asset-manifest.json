@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2bc2da20.css",
+    "main.css": "/static/css/main.2977a8a6.css",
     "main.js": "/static/js/main.08ffda73.js",
     "static/js/453.5615ffab.chunk.js": "/static/js/453.5615ffab.chunk.js",
     "static/media/hero-steamos.png": "/static/media/hero-steamos.43912610e9466fe475a0.png",
@@ -20,12 +20,12 @@
     "static/media/logo.svg": "/static/media/logo.87dfa5ab2f8f1880822e48aeee5a5de7.svg",
     "index.html": "/index.html",
     "static/media/chevron.svg": "/static/media/chevron.0cbc2dd4abc453982104d7bcfab3e90e.svg",
-    "main.2bc2da20.css.map": "/static/css/main.2bc2da20.css.map",
+    "main.2977a8a6.css.map": "/static/css/main.2977a8a6.css.map",
     "main.08ffda73.js.map": "/static/js/main.08ffda73.js.map",
     "453.5615ffab.chunk.js.map": "/static/js/453.5615ffab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bc2da20.css",
+    "static/css/main.2977a8a6.css",
     "static/js/main.08ffda73.js"
   ]
 }
